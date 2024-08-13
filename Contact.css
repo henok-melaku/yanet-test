@@ -1,0 +1,144 @@
+#contact-faq {
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Adjust width as necessary */
+    margin: 0 auto;
+    text-align: center; /* Center text */
+}
+
+.container h2 {
+    width: 100%; /* Full width for centering */
+    font-family: 'Abril Fatface', cursive; /* Apply the same font */
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #112849;
+    transition: transform 0.3s ease; /* Add transition for zoom effect */
+}
+.container p {
+    width: 100%; /* Full width for centering */
+    font-family: 'Abril Fatface', cursive; /* Apply the same font */
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #112849;
+    transition: transform 0.3s ease; /* Add transition for zoom effect */
+}
+
+.container h2:hover {
+    transform: scale(1.1); /* Scale up the heading on hover */
+}
+
+.contact-info {
+    width: 45%; /* Adjust width as necessary */
+    padding: 20px;
+    position: relative; /* For positioning the vertical line */
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Gap between info items */
+}
+
+.info-item i {
+    color: black; /* Change icon color to black */
+    background-color: white; /* Background color for circle */
+    border: 2px solid #000000; /* Border color for the circle */
+    border-radius: 50%; /* Make it circular */
+    padding: 5px; /* Add padding to create the circle effect */
+    font-size: 12px; /* Small icon size */
+    width: 30px; /* Width for circle */
+    height: 30px; /* Height for circle */
+    display: flex; /* Center icon inside the circle */
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.contact-form {
+    width: 45%; /* Adjust width as necessary */
+    padding: 20px;
+    font-family: 'Abril Fatface', cursive; /* Apply the same font */
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'Abril Fatface', cursive; /* Apply the same font */
+    color: #112849;
+    text-align: center; /* Center the heading */
+    transition: transform 0.3s ease; /* Add transition for zoom effect */
+}
+
+
+.contact-form h2:hover {
+    transform: scale(1.1); /* Scale up the heading on hover */
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+    font-family: 'Abril Fatface', cursive; /* Apply the same font */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #112849;
+    color: #FAF5F1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+}
+
+/* Vertical line style */
+.contact-info:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px; /* Position to the right of the contact info */
+    width: 2px; /* Width of the vertical line */
+    height: 120%; /* Full height of the container */
+    background-color: #000000; /* Vertical line color */
+}
+.contact-info a {
+    color: #112849; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    font-family: 'Abril Fatface', cursive; /* Apply the same font */
+}
+
+.contact-info a:hover {
+    color: #000000; /* Change color on hover */
+}

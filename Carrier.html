@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Carrier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <link rel="icon" href="Logo.ico" type="image/png">
+   
+</head>
+<body>
+    <header>
+        <!-- Upper part of the header -->
+        <div class="header-upper">
+            <div class="header-left">
+                <a href="mailto:info@liyana.com"><i class="fas fa-envelope"></i> info@liyanahealthcare.com</a>
+                <a href="tel:+0462126127"><i class="fas fa-phone"></i> +0462126127</a>
+            </div>
+            <div class="header-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a> 
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane"></i></a> 
+            </div>
+        </div>
+
+        <!-- Lower part of the header -->
+        <div class="header-lower">
+            <div class="logo">
+                <a href="#"><img src="Logo.png" alt="Your Logo"></a> 
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                  
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicies.html">Services</a>
+                        <ul class="droopdown">
+                            <li><a href="#medical-care">Medical care</a></li>
+                            <li><a href="#education">Eduaction and Consultency </a></li>
+                            <li><a href="#products">Product</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.html"class="">About Us</a></li><!-- Active class here -->
+                     <li> <a href="Conatact.html">Contact</a></li>
+                     <li><strong> <a href="Carrier.html">Carrier </a></li></strong>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="job-posting">
+        <h1>Software Engineer</h1>
+        
+        <div class="job-summary">
+            <h3>Job Summary</h3>
+            <p>We are looking for a skilled Software Engineer to join our team. The ideal candidate will have experience with full-stack development and a passion for coding.</p>
+        </div>
+    
+        <div class="job-details">
+            <div class="details-column">
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Develop and maintain web applications</li>
+                    <li>Collaborate with cross-functional teams</li>
+                    <li>Write clean, scalable code</li>
+                    <li>Test and deploy applications and systems</li>
+                </ul>
+            </div>
+            <div class="details-column">
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Bachelor's degree in Computer Science or related field</li>
+                    <li>2+ years of experience in software development</li>
+                    <li>Proficiency in JavaScript, HTML, CSS</li>
+                    <li>Experience with React or Angular</li>
+                </ul>
+            </div>
+            <div class="details-column">
+                <h3>Benefits</h3>
+                <ul>
+                    <li>Competitive salary</li>
+                    <li>Health insurance</li>
+                    <li>Flexible working hours</li>
+                    <li>Opportunities for professional growth</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="apply-section">
+            <h3>How to Apply</h3>
+            <p>Send your resume and cover letter to <a href="mailto:jobs@example.com">jobs@example.com</a> with the subject line "Software Engineer Application".</p>
+        </div>
+    </div>
+    
+    
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Quick Links</h3>
+                <a href="#">Services</a>
+                <a href="#">Career Page</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="footer-center">
+                <h3>Contact Information</h3>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Address: <a href="https://maps.app.goo.gl/VnfkEdfWEveJyiVu7" target="_blank">Ethiopia, Hawassa, Memebo</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    Phone: <a href="tel:+0462126127">+0462126127</a>
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    Email: <a href="mailto:info@liyanahealthcare.com" class="email-link">info@liyanahealthcare.com</a>
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 LIYANA HEALTH CARE PLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTopBtn"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        // Show the button when scrolling down
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        // Smooth scroll back to top
+        document.getElementById('backToTopBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- AOS Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500, // Set the duration to 1500 milliseconds
+        });
+    </script>
+</body>
+</html>

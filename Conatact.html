@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <link rel="icon" href="Logo.ico" type="image/png">
+   
+</head>
+<body>
+    <header>
+        <!-- Upper part of the header -->
+        <div class="header-upper">
+            <div class="header-left">
+                <a href="mailto:info@liyana.com"><i class="fas fa-envelope"></i> info@liyanahealthcare.com</a>
+                <a href="tel:+0462126127"><i class="fas fa-phone"></i> +0462126127</a>
+            </div>
+            <div class="header-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a> 
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane"></i></a> 
+            </div>
+        </div>
+
+        <!-- Lower part of the header -->
+        <div class="header-lower">
+            <div class="logo">
+                <a href="#"><img src="Logo.png" alt="Your Logo"></a> 
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                  
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicies.html">Services</a>
+                        <ul class="droopdown">
+                            <li><a href="#medical-care">Medical care</a></li>
+                            <li><a href="#education">Eduaction and Consultency </a></li>
+                            <li><a href="#products">Product</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.html"class="">About Us</a></li><!-- Active class here -->
+                     <li><strong> <a href="Conatact.html">Contact</a></li></strong>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="contact-faq">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact us</h2>
+                <p>Please feel free to reach out to us through the contact form or using the information below.</p>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://www.google.com/maps?q=123+Main+Street,+City,+Country" target="_blank">
+                        <span>Membo, Hawassa, Ethiopia</span>
+                    </a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+1234567890">
+                        <span>+0462126127</span>
+                    </a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:henokmelaku907@gmail.com">
+                        <span>info@liyanahealthcare.com</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form>
+                    <div class="form-field">
+                        <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="tel" id="mobile" name="mobile" placeholder="Mobile" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-field">
+                        <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Quick Links</h3>
+                <a href="#">Services</a>
+                <a href="#">Career Page</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="footer-center">
+                <h3>Contact Information</h3>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Address: <a href="https://maps.app.goo.gl/VnfkEdfWEveJyiVu7" target="_blank">Ethiopia, Hawassa, Memebo</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    Phone: <a href="tel:+0462126127">+0462126127</a>
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    Email: <a href="mailto:info@liyanahealthcare.com" class="email-link">info@liyanahealthcare.com</a>
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 LIYANA HEALTH CARE PLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTopBtn"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        // Show the button when scrolling down
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        // Smooth scroll back to top
+        document.getElementById('backToTopBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- AOS Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500, // Set the duration to 1500 milliseconds
+        });
+    </script>
+</body>
+</html>

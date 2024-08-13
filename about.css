@@ -1,0 +1,223 @@
+/* Company Overview Section Styles */
+.company-overview {
+    background-color: #ffffff; /* Light background color */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.overview-container {
+    max-width: 1200px; /* Maximum width for larger screens */
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 40px; /* Space between image and text */
+}
+
+.overview-left {
+    flex: 1; /* Allow the image container to take up equal space */
+    text-align: center; /* Center the image */
+    
+}
+
+.profile-image {
+    width: 270px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10%; /* Circular image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.profile-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.overview-right {
+    flex: 2; /* Allow text container to take up more space */
+    text-align: justify; /* Justify text alignment */
+}
+
+.company-overview h2 {
+    color: #112849; /* Dark blue color for the main heading */
+    margin-bottom: 15px; /* Spacing below heading */
+    font-family: 'Abril Fatface', cursive; /* Apply the same font */
+    font-size: 26px;
+}
+
+.company-overview p {
+    line-height: 1.6; /* Improve readability */
+    color: black; /* Text color */
+}
+
+.mission-title,
+.vision-title {
+    color: #000000; /* Mission and Vision titles color */
+    margin-top: 20px; /* Space above titles */
+}
+
+.mission-title i,
+.vision-title i {
+    color: #000000; /* Icon color */
+}
+
+.company-overview a {
+    color: #112849; /* Link color */
+    text-decoration: underline; /* Underline links */
+    
+}
+
+.company-overview a:hover {
+    color: #000000; /* Change link color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+.overview-description {
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for effects */
+    color: black; /* Default text color */
+    line-height: 1.6; /* Improve readability */
+    font-size: 14px;
+}
+
+.overview-description:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    color: #000000; /* Change color on hover */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Add subtle text shadow on hover */
+}
+.core-values-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Distribute space evenly */
+    color: #000000;
+    font-size: 14px;
+}
+
+.core-values-list li {
+    background-color: #FFFFFF; /* Background color for list items */
+    border: 0.5px solid #030303; /* Border color for list items */
+    padding: 10px 20px; /* Padding for list items */
+    margin: 5px; /* Margin around list items */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for effects */
+    flex: 1; /* Allow items to grow and take equal space */
+    text-align: center; /* Center text in list items */
+}
+
+.core-values-list li:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    background-color: #1e1d1d; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+.team-information {
+    background-color: #FFFFFF; /* Light background for contrast */
+    padding: 40px; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+.team-title {
+    color: #000000; /* Title color */
+    margin-bottom: 40px; /* Space below the title */
+    font-size: 36px;
+    font-family: 'Abril Fatface', cursive; /* Apply the same font */
+}
+
+.team-container {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.team-member {
+    background-color: #FFFFFF; /* White background for the member card */
+    border: 1px solid #000000; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.team-member-image {
+    width: 150px; /* Fixed width for the image */
+    height: 150px; /* Fixed height for the image */
+    border-radius: 5px; /* Rounded corners for image */
+    object-fit: cover; /* Maintain aspect ratio, cover the area */
+    
+}
+
+.team-member-name {
+    color: #112849; /* Name color */
+    margin: 10px 0; /* Space above and below the name */
+}
+
+.team-member-name a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.team-member-name a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.team-member-position {
+    color: #080808; /* Lighter color for position */
+    font-style: italic; /* Italic style for emphasis */
+}
+.team-title {
+    display: inline-block; /* Ensures underline works correctly */
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.team-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust this value based on your design */
+    width: 100%;
+    height: 2px; /* Adjust thickness */
+    background-color: currentColor; /* Uses the color of the text */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.team-title:hover {
+    transform: scale(1.1); /* Zoom effect */
+    color: #000000; /* Change text color on hover */
+}
+
+.team-title:hover::after {
+    transform: scaleX(1); /* Underline effect */
+    transform-origin: bottom left;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .overview-container {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: center;
+    }
+
+    .overview-left, .overview-right {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .profile-image {
+        width: 120px; /* Adjust image size for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .team-member {
+        margin: 10px 0; /* Space between vertically stacked items */
+    }
+}
